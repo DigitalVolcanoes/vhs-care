@@ -1,0 +1,1395 @@
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>
+      Victorian Health and Support Care
+    </title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Medic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script>
+      addEventListener(
+        "load",
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+    <!--// Meta tag Keywords -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //Custom-Files -->
+
+    <!-- Web-Fonts -->
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+    
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBaloo+2%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.4.1' media='all' />
+    <!-- //Web-Fonts -->
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  </head>
+  
+  <style>
+      body{
+          font-family: "Baloo 2", Sans-serif;
+          overflow-x:hidden;
+      }
+      html{
+           overflow-x:hidden;
+      }
+  </style>
+
+  <body>
+    <div class="enquire_now" id="enquireNow">
+      <span>Enquire Now</span>
+    </div>
+  
+    <div class="enquire_form" id="enquireForm">
+      <button class="close_button" id="closeButton">&times;</button>
+         <div class="logo_container">
+      <img src="images/vhs-logoo.png" alt="vhs-logo" class="logojk">
+      
+      </div>
+      <span>Quick Enquiry
+  </span>
+  <span class="enq">Want to know more details?</span>
+      <form action="mailsending.php" method="post">
+     
+    <input type="text" id="names" name="names" placeholder="Enter Your Name" required>
+   
+          <input type="tel" id="phones" placeholder="Enter Your Phone" name="phones">
+  
+    <input type="email" id="emails" name="emails" placeholder="Enter Your Email" required>
+  
+    
+    <textarea id="message" name="message" placeholder="Enter Message" rows="4" required></textarea>
+  
+    <button type="submit">Submit</button>
+    
+  
+      </form>
+    </div>
+  
+     
+     <script>
+  // Get elements
+  const enquireNow = document.querySelector('#enquireNow');
+  const enquireForm = document.querySelector('#enquireForm');
+  const closeButton = document.querySelector('#closeButton');
+  
+  // Show the form when enquire_now is clicked
+  enquireNow.addEventListener('click', () => {
+    enquireForm.style.display = 'block';
+  });
+  
+  // Close the form when close button is clicked
+  closeButton.addEventListener('click', () => {
+    enquireForm.style.display = 'none';
+  });
+  
+  // Close the form when clicking outside the form
+  window.addEventListener('click', (event) => {
+    if (event.target === enquireForm) {
+      enquireForm.style.display = 'none';
+    }
+  });
+  
+  
+     </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+
+
+
+<div class="phonee ">
+  <a target="_blank" href="Tel:">
+    <h5 class="animate-boxs"><i class="fa fa-phone fa-flip-horizontal" ></i></h5>
+  </a>
+</div>
+<script>
+  var phoneIcon = document.querySelector('.phonee h5');
+
+phoneIcon.addEventListener('mouseover', function() {
+  this.classList.add('animate-boxs');
+});
+
+phoneIcon.addEventListener('mouseout', function() {
+  this.classList.remove('animate-boxs');
+});
+</script>
+
+    
+   
+<style>
+
+.carousel-indicators{
+    display:none;
+}
+     .enquire_form button {
+      padding: 6px 11px;
+      background-color: #00a79d;}
+      
+      .main-top {
+           width: 90%;
+            margin-left: 80px;
+            position:fixed;
+            background-color: #FFFFFF36;
+            /*height:140px;*/
+            border-radius: 0px 0px 10px 10px;
+            
+      }
+      
+      .in-nav{
+          padding-top:35px;
+          margin-left: 95px;
+      }
+      
+      .navbar-brand img {
+          margin-left:-60px;
+          margin-right: 150px;
+          margin-top: -40px;
+      }
+      
+     .navbar-light .navbar-nav .nav-link {
+         /*color: var(--e-global-color-64566c3)!important;*/
+          font-weight: bold;
+          font-size:16px;
+      }
+      
+      
+     #nav-item1 {
+    background: #00a79d;
+    border-radius: 6px;
+    display: inline;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:white;
+}
+.carousel-fade{
+    background: linear-gradient(180deg, #33323275 39%, #333232 100%);
+}
+.isFixed {
+     z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 2px 5px 1px rgba(8, 8, 8, 0.35);
+    z-index: 999;
+    background: white;
+    -webkit-transition: box-shadow .3s ease-in-out;
+    -moz-transition: box-shadow .3s ease-in-out;
+    -ms-transition: box-shadow .3s ease-in-out;
+    -o-transition: box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out;
+    -webkit-transition: background-color .1s ease-in-out;
+    -moz-transition: background-color .1s ease-in-out;
+    -ms-transition: background-color .1s ease-in-out;
+    -o-transition: background-color .1s ease-in-out;
+    transition: background-color .1s ease-in-out;
+    width: 2150px;
+    margin-left: -45px;
+    height: 100px;
+    padding-left: 113px;
+    padding-bottom: 25px;
+}
+.isFixed>img{
+    top:5px;
+}
+a.login-button {
+    color: black;
+    letter-spacing: 0px;
+    font-size: 16px;
+    padding: 6px 8px;
+    background: #ffa400;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    top: -11px;
+    position: relative;
+}
+
+a.login-button:hover {
+    background: #00a79d;
+    color: white;
+}
+
+
+
+
+
+
+</style>
+    <!-- header 2 -->
+    <div id="home">
+      <!-- navigation -->
+      <div class="main-top py-1 ">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+          <div class="container in-nav">
+            <!-- logo -->
+            <h1>
+              <a
+                class="navbar-brand font-weight-bold font-italic"
+                href="index.html"
+              >
+                <img src="images/vhs_whitelogo.png" id="whiteLogo"/>
+                <img src="images/vhs-logoo.png" id="logoo"/>
+              </a>
+            </h1>
+            <!-- //logo -->
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+              <!--<span class="navbar-toggler-icon"></span>-->
+            </button>
+            <div
+              class="collapse navbar-collapse text-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ml-lg-auto nav-item">
+                <li class="nav-item active mx-lg-4 my-lg-0 my-3" >
+                  <a class="nav-link" href="index.html" id="nav-item1"
+                    >Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item mx-lg-4 my-lg-0 my-3">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item mx-lg-4 my-lg-0 my-3">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+               
+                <li class="nav-item mx-lg-4 my-lg-0 my-3">
+                  <a class="nav-link" href="ndis.html">NDIS</a>
+                </li>
+                <li class="nav-item mx-lg-4 my-lg-0 my-3">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              
+              <a
+              href="https://www.ndis.gov.au/"
+              class="login-button ml-lg-5 mt-lg-0 mt-4 mb-lg-0 mb-3"
+              
+            >
+                <i class="fas fa-sign-in-alt mr-2"></i>
+                Registered NDIS Provider</a
+              >
+              <!-- //login -->
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- //navigation -->
+      <!-- modal -->
+      <!-- login -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter1"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="login px-4 mx-auto mw-100">
+                <h5 class="text-center mb-4">Login Now</h5>
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <label>Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder=""
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="mb-2">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="password"
+                      placeholder=""
+                      required=""
+                    />
+                  </div>
+                  <button type="submit" class="btn submit mb-4">Login</button>
+                  <p class="forgot-w3ls text-center pb-4">
+                    <a href="#" class="text-white">Forgot your password?</a>
+                  </p>
+                  <p class="account-w3ls text-center pb-4">
+                    Don't have an account?
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter2"
+                      >Create one now</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //login -->
+      <!-- register -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter2"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal-content-2">
+            <div class="modal-header text-center">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="login px-4 mx-auto mw-100">
+                <h5 class="text-center mb-4">Register Now</h5>
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <label>Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder=""
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder=""
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="mb-2">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="password"
+                      id="password1"
+                      placeholder=""
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="password"
+                      id="password2"
+                      placeholder=""
+                      required=""
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary submit mb-4">
+                    Register
+                  </button>
+                  <p class="text-center pb-2">
+                    <a href="#" class="text-white"
+                      >By clicking Register, I agree to your terms</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //register -->
+      <!-- //modal -->
+    </div>
+    <!-- //header 2 -->
+
+ <div id="myCarousel" class="carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/ban1.jpg" alt="" width="100%">
+      <img src="images/mob_ban1.jpg" alt="" width="100%" class="mob">
+      <div class="carousel-caption">
+        <h3>Empowering People <span>Changing Lives</span></h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/ban2.jpg" alt=""  class="img-responsive">
+      <img src="images/mob_ban2.jpg" alt="" width="100%" class="mob">
+      <div class="carousel-caption">
+        <h3>Removing barriers <span>creating inclusion</span></h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/ban3.jpg" alt=""  class="img-responsive">
+      <img src="images/mob_ban3.jpg" alt="" width="100%" class="mob">
+      <div class="carousel-caption">
+        <h3>Breaking limits <span>achieving dreams</span></h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/ban4.jpg" alt=""  class="img-responsive">
+      <img src="images/mob_ban4.jpg" alt="" width="100%" class="mob">
+      <div class="carousel-caption">
+         <h3>Embrace diversity <span>ignite possibility</span></h3>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+  
+  
+  
+  /* Default styles for desktop view */
+  .mob {
+    display: none;
+  }
+
+  /* Media query for mobile view */
+  @media (max-width: 767px) {
+    .mob {
+      display: block;
+    }
+    .carousel-inner .item img {
+      display: none;
+    }
+  }
+</style>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<style>
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.1, 1.1 );
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.2, 1.2);
+    }
+  }
+
+  .carousel-inner .item {
+    -webkit-animation: zoom 20s infinite; /* added 'infinite' for continuous animation */
+    animation: zoom 20s infinite; /* added 'infinite' for continuous animation */
+  }
+  
+   .carousel-inner .item {
+    position: relative;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    text-align: center;
+  }
+
+  .carousel-caption h3 {
+    font-size:38px; /* Adjust the font size as needed */
+    font-weight: 700; 
+    font-family:inherit;
+    color:#00a79d;
+    
+  }
+  
+   .carousel-caption span{
+       color:#ffa400;
+       
+   }
+  
+  .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    opacity: .5;
+    filter: alpha(opacity=50);
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .isFixed>.in-nav{
+        
+            margin-left: 165px;
+        
+    }
+    
+    .isFixed>.nav.fixed-navi ul{
+        
+    }
+    
+    .navbar{
+        width: 506px;
+    }
+    .carousel-inner>.item>img{
+        height: 350px;
+        width:500px;
+    }
+    .carousel-inner {
+    position: relative;
+    width: 110%;
+    overflow: hidden;
+    height: 750px;
+}
+ .carousel-caption h3 {
+    font-size: 19px; /* Adjust the font size as needed */
+    font-weight: bold; 
+  }
+  .main-top {
+    width: 90%;
+    margin-left: 80px;
+    position: fixed;
+    background-color: #FFFFFF36;
+    /* height: 140px; */
+    border-radius: 0px 0px 10px 10px;
+    height: 74px;
+    margin-left: 22px;
+}
+.carousel-indicators{
+    display:none;
+}
+.navbar-brand img {
+   height: 35px;
+    margin-top: -72px;
+    padding-right: 205px;
+    margin-left: -94px;
+}
+
+.navbar-light .navbar-toggler {
+    padding: 3px 7px;
+    font-size: 20px;
+    position: relative;
+    margin-top: -105px;
+    margin-left: 180px;
+}
+
+div#navbarSupportedContent {
+   background: rgb(247 247 247);
+    margin-left: -133px;
+    margin-top: -16px;
+    padding-left: 18px;
+    margin-right: -30px;
+   
+}
+.nav-item{
+    padding-top:10px;
+}
+
+#nav-item1{
+    margin-left: -7px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+}
+
+a.login-button{
+        margin-left: -317px
+}
+
+.welcome-right .fluidi{
+    width: 75%;
+    margin-left: 98px;
+    margin-top: -86px;
+    top: 40px;
+    position: relative;
+}
+
+#welcome1{
+    margin-left: -1px;
+    padding: 10px;
+    top: -33px;
+    border-radius: 0px;
+    padding-right: 35px;
+    padding-left: 110px;
+}
+#welcome1>p{
+    font-size:16px;
+    color: #7D8491;
+    font-family: "Baloo 2", Sans-serif;
+}
+
+.welcome-right{
+    padding-top: 130px;
+    padding-bottom: 50px;
+    margin-top: -25px;
+    width:100%;
+}
+
+
+}
+
+
+.welcome-right{
+    background:#00a79d;
+    padding-top:100px;
+    padding-bottom:100px;
+    width:100%
+}
+
+.row11 {
+    margin-right: -15px;
+    margin-left: -113px;
+    margin-top:-30px;
+    margin-bottom:-30px;
+    width: 140%;
+    
+}
+.welcome-right>img{
+        margin-left: 25px;
+        border-radius:5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.welcome-right img:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+
+.welcome-left{
+       margin-left: -110px;
+       background:white;
+       height:450px;
+       top:100px;
+       padding-right: 220px;
+       border-radius:10px;
+       padding-left: 35px;
+}
+
+.welcome-left h3{
+    color:#f05423;
+    font-family: "Baloo 2", Sans-serif;
+}
+
+
+  .carousel-inner .item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #33323275 39%, #333232 100%);
+      z-index: 1;
+    }
+    #welcome1>p{
+        
+        font-family: "Baloo 2", Sans-serif;
+        color: #7D8491;
+        
+    }
+    
+.mob {
+  display: none !important;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 767px) {
+  .mob {
+   display: block !important;
+    height: 750px !important;
+    width: 500px !important;
+}
+
+  /* Hide the desktop images in mobile view */
+  .carousel-inner .item:not(.active) img {
+    display: none;
+  }
+  .carousel-caption{
+    align-items: center;
+    display: flex;
+    /* margin-left: -88px; */
+    padding-left: 0px;
+    margin-left: -20px;
+    padding-right: 0px;
+    padding-bottom: 125px;
+  }
+}
+.rows12{
+    width:100%;
+}
+
+
+
+
+</style>
+
+  <script>
+    $(document).ready(function () {
+      // Check the initial state on page load
+      checkIsFixedState();
+
+      // Function to check and update the state based on isFixed class
+      function checkIsFixedState() {
+        var navbar = $('.navbar');
+        if (navbar.hasClass('isFixed')) {
+          // If isFixed class is present, hide whiteLogo and show logoo
+          $('#whiteLogo').hide();
+          $('#logoo').show();
+        } else {
+          // If isFixed class is not present, show whiteLogo and hide logoo
+          $('#whiteLogo').show();
+          $('#logoo').hide();
+        }
+      }
+
+      // Event listener for scroll to update the state
+      $(window).on('scroll', function () {
+        checkIsFixedState();
+      });
+    });
+  </script>
+    
+    
+    <!-- //banner -->
+    <div class="clearfix"></div>
+
+   
+
+    <!-- middle section -->
+    <div class="w3ls-welcome py-5">
+      <div class="container py-xl-5 py-lg-3">
+        <div class="row row11">
+            <div class="rows12">
+          <div class="col-lg-6 order-lg-1 order-2 welcome-right col-12">
+            <img src="images/bbq2.png" alt=" " class="img-fluid fluido" />
+            <img src="images/about.jpg" alt=" " class="img-fluid fluidi" />
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1 welcome-left mt-4 col-12" id="welcome1">
+            <h3>Victorian Health: Your Trusted Source for Support</h3>
+            <!-- <h6 class="mt-3">Suspendisse porta erat sit amet eros sagittis</h6> -->
+            <!-- <h4 class="my-4 font-italic">
+              Cum sociis natoque penatibus et magnis dis parturient montesmus,
+              Proin vel nibh et elit mollis commodo et nec augue tristique sed.
+            </h4> -->
+           
+             <p>
+              Victorian Health and Support Care is a registered NDIS Provider that is committed to supporting people with disabilities to achieve their aspirations and live full and inclusive lives in the community. We provide highly personal, responsive, and participant-focused services that are tailored to meet the individual needs of each person we support.
+            </p>
+            <p>We employ highly competent and qualified staff who are passionate about making a difference in the lives of people with disabilities. We work closely with participants and their families to develop and implement individualized support plans that promote dignity, integrity, and respect.</p>
+           <!-- <div class="readmore-w3-agileits mt-md-5 mt-4">
+              <a href="single.html" class="w3ls-button-agile text-dark"
+                >View Some More</a
+              > -->
+             </div>
+             <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   
+
+
+    <!--<div class="blog-w3ls py-5" id="blog">-->
+    <!--  <div class="container py-xl-5 py-lg-3">-->
+    <!--    <div class="w3ls-titles text-center mb-5">-->
+    <!--      <h3 class="title ">Our Best Services</h3>-->
+    <!--      <span>-->
+    <!--        <i class="fas fa-user-md text-white"></i>-->
+    <!--      </span>-->
+    <!--      <p class="mt-2 text-white">-->
+    <!--        Victorian Health and Support Care provides a range of innovative and personalized services to help people with disabilities live their best lives. From in-home support to community participation, we offer everything you need to achieve your goals and live independently in the community.
+    <!--      </p>-->
+    <!--    </div>-->
+    <!--    <div class="row package-grids mt-5">-->
+    <!--      <div class="col-md-4 pricing">-->
+    <!--        <div class="price-top">-->
+    <!--          <a href="support-coordination.html">-->
+    <!--            <img src="images/serv1.jpg" alt="" class="img-fluid" />-->
+    <!--          </a>-->
+    <!--           <h3>-->
+    <!--            13-->
+    <!--            <span>August</span>-->
+    <!--        </div>-->
+    <!--        <div class="price-bottom p-4">-->
+    <!--          <h4 class="text-dark mb-3">-->
+    <!--            Support Coordination-->
+    <!--          </h4>-->
+    <!--          <a href="support-coordination.html">-->
+    <!--            Support coordination helps people with disabilities navigate the complex NDIS system and access the services and support they need to live their best lives.</a-->
+    <!--          > -->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-md-4 pricing my-md-0 my-5">-->
+    <!--        <div class="price-top">-->
+    <!--          <a href="personal-care.html">-->
+    <!--            <img src="images/serv2.jpg" alt="" class="img-fluid" />-->
+    <!--          </a>-->
+    <!--           <h3>-->
+    <!--            24 
+    <!--            <span>August</span>-->
+    <!--          </h3> -->
+    <!--        </div>-->
+    <!--        <div class="price-bottom p-4">-->
+    <!--          <h4 class="text-dark mb-3">-->
+    <!--            Personal Care & In-Home Support -->
+    <!--          </h4>-->
+    <!--          <a href="personal-care.html">-->
+    <!--            Personal Care & In-Home Support helps people with disabilities live independently in their own homes by providing assistance with activities of daily living (ADLs) and other essential tasks.</a-->
+    
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-md-4 pricing">-->
+    <!--        <div class="price-top">-->
+    <!--          <a href="support-independent.html">-->
+    <!--            <img src="images/serv3.jpg" alt="" class="img-fluid" />-->
+    <!--          </a>-->
+    <!--           <h3>-->
+    <!--            30-->
+    <!--            <span>August</span>-->
+    <!--          </h3> -->
+    <!--        </div>-->
+    <!--        <div class="price-bottom p-4">-->
+    <!--          <h4 class="text-dark mb-3">-->
+    <!--            Support Independent Living-->
+    <!--          </h4>-->
+    <!--          <a href="support-independent.html">-->
+    <!--            Support Independent Living helps people with disabilities live their lives to the fullest by providing the support they need to live independently in the community.</a-->
+    <!--          >
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--  <div class="newbutton">-->
+    <!--    <button type="button" onclick="window.location.href='services.html'">Click here to view more services</button>-->
+    <!--  </div>-->
+    <!--</div>-->
+   
+    
+    
+<section>
+    <div class="main-div">
+        <div class="main-walk col-md-6 order-lg-1 order-1a col-12">
+
+            <h2>Our Best Services</h2>
+
+            <p class="mt-2">
+                Victorian Health and Support Care provides a range of innovative and personalized services to help people
+                with disabilities live their best lives. From in-home support to community participation, we offer
+                everything you need to achieve your goals and live independently in the community. At Victorian Health and
+                Support Care, we believe in the power of community.
+
+            </p>
+
+            <p class="mt-2">Independence is at the core of our philosophy. Through our range of services, we empower
+                individuals to lead fulfilling lives on their terms. We provide the necessary tools and encouragement to
+                navigate daily challenges with confidence. Our dedicated and compassionate care team is committed to
+                creating a positive and supportive environment.
+            </p>
+
+            <div class="elementor-button-wrapper">
+                <a class="elementor-button elementor-button-link elementor-size-sm" href="about.html">
+                    <span class="elementor-button-content-wrapper">
+                        <span class="elementor-button-icon elementor-align-icon-right">
+                            <i aria-hidden="true" class="icon icon-chevron-right"></i>
+                        </span>
+                        <span class="elementor-button-text">More About Us</span>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="main-walk2 col-md-6 order-lg-2 order-2s col-12">
+
+            <div class="in-walk2">
+
+                <div class="box box1">
+                    <div class="in_box">
+                        <div class="img-box">
+                            <img src="images/box_1.jpg" alt="box-image">
+                        </div>
+                        <div class="head-box">
+                            <h4><a href="support-coordination.html">Support Coordination</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box2">
+                    <div class="in_box">
+                        <div class="img-box">
+                            <img src="images/box_2.jpg" alt="box-image">
+                        </div>
+                        <div class="head-box">
+                            <h4><a href="social&-community.html">Community Participation</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box3">
+                    <div class="in_box">
+                        <div class="img-box">
+                            <img src="images/box_3.jpg" alt="box-image">
+                        </div>
+                        <div class="head-box">
+                            <h4><a href="personal-care.html">Personal Care & In-Home Support<a/></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box4">
+                    <div class="in_box">
+                        <div class="img-box">
+                            <img src="images/box_4.jpg" alt="box-image">
+                        </div>
+                        <div class="head-box">
+                            <h4><a href="support-independent.html">Support Independent Living</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+    <style>
+    
+    .elementor-button-wrapper>a{
+        font-size: 18px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    color: var(--e-global-color-64566c3);
+    background-color:#ffa400;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #ffa400;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+    top: 60px;
+    position: relative;
+    }
+    
+    .main-walk{
+        margin-top:90px;
+    }
+    .main-div{
+        display:flex;
+    }
+    .main-walk2{
+        top:-120px;
+        margin-left: -32px;
+    }
+    
+    .in-walk2{
+       position: absolute;
+    background: #00a79d;
+    height: 900px;
+    width:100%;
+    top: 99px;
+    display: flex;
+    flex-wrap: wrap;
+        
+        
+    }
+    .in_box{
+            border-radius: 10px 10px 10px 10px;
+            padding-bottom: 15px;
+    }
+    
+    
+       
+        .img-box>img{
+           border-radius: 10px 10px 10px 10px;
+          padding: 0px 0px 0px 0px;
+          height: 220px;
+          width: 300px
+        }
+        
+    .box{
+        
+    margin: 100px 10px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    width:340px;
+        margin-top: -50px;
+    margin-left: -85px;
+        height: 315px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      }
+      
+      .head-box>h4{
+           font-family: "Baloo 2", Sans-serif;
+           font-weight: 600;
+           font-size: 25px;
+           margin-top: 14px;
+           color: #ffa400;
+                }
+      
+      .main-walk>h2{
+         font-family: "Baloo 2", Sans-serif; 
+         color: #ffa400;
+      }
+       
+      .main-walk>p{
+          color: #7D8491;
+          font-family: "Baloo 2", Sans-serif;
+          padding-right: 128px;
+          text-align: justify;
+      } 
+    .box2{
+        
+    margin-left: 300px;
+    top: 110px;
+    position: absolute;
+        
+    }
+    
+    .box3{
+         top: 522px;
+    position: absolute;
+    margin-left: 305px;
+    }
+    .box1{
+        margin-left: -95px;
+    }
+    
+    .box4{
+       position: absolute;
+    margin-top: 21pc;
+    margin-left: -82px;
+    }
+    
+    .box:hover{
+        
+        -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+        
+    }
+    .ndispro {
+    width: 100%;
+    padding: 0px 29px;
+    box-sizing: border-box;
+    margin-top: 320px;
+}
+
+@media (max-width: 767px) {
+    
+     .main-walk {
+                order: 1;
+            }
+
+            .main-walk2 {
+                order: 2;
+            }
+    
+    .main-walk>p{
+        padding-right: 0px;
+    }
+    
+    .main-walk2{
+        
+    }
+    
+    .in-walk2{
+        position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: -24pc;
+    background: none;
+    top: 75pc;
+        
+    }
+    
+    .box1{
+            margin-left: 30px
+    }
+    
+    .box2{
+            margin-left: 30px;
+            top: 340px;
+    }
+    
+    .box3{
+            margin-left: 30px;
+               top: 680px;
+    }
+    
+    .box4{
+           margin-left: 30px;
+           top: 635px;
+    }
+    .box{
+            display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    }
+    
+.ndispro{
+    margin-top:92pc;
+}
+}
+
+.ndiscontent>p{
+    font-family: "Baloo 2", Sans-serif;
+}
+
+
+
+        
+        
+    </style>
+
+
+    <div class="ndispro">
+     
+      <div class="ndis">
+          <div class="ndiscontent"> <h2>
+            NDIS</h2>
+              <p> 
+                The National Disability Insurance Scheme (NDIS) is a national scheme that provides financial assistance to people with disabilities to cover the cost of their reasonable and necessary supports. It is a lifelong scheme that is available to people of all ages and levels of disability.</p>
+              <p> NDIS will help people with disability to achieve their goals. This may include greater independence, community involvement, employment and improved well being</p>
+          </div>
+          <div class="ndisphoto">
+              <img src="images/ndisimage.png" alt="Image">
+          </div>
+      </div>
+  </div>
+
+  
+    <!-- footer -->
+    <footer>
+      <div class="w3ls-footer-grids pt-sm-4 pt-3">
+        <div class="container py-xl-5 py-lg-3">
+          <div class="row">
+            <div class="col-md-4 w3l-footer">
+              <h2 class="mb-sm-3 mb-2">
+                <a
+                  href="index.html"
+                  class="text-white font-italic font-weight-bold"
+                >
+                 <img src="images/vhs-logoo.png" id="logo">
+                </a>
+              </h2>
+              <p>
+                Victorian Health and Support Care is a registered NDIS Provider that is committed to supporting people with disabilities to achieve their aspirations and live full and inclusive lives in the community. 
+              </p>
+            </div>
+            <div class="col-md-4 w3l-footer my-md-0 my-4">
+              <h3 class="mb-sm-3 mb-2 text-white">Address</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-location-arrow float-left"></i>
+                  <p class="ml-4">
+                    32 Westbury Way, LYNDHURST VIC 3975
+                    
+                  </p>
+                  <div class="clearfix"></div>
+                </li>
+                <li class="my-3">
+                  <i class="fas fa-phone float-left"></i>
+                  <p class="ml-4">67 667 003 045</p>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <i class="far fa-envelope-open float-left"></i>
+                  <a href="mailto:info@example.com" class="ml-3"
+                    >mail@example.com</a
+                  >
+                  <div class="clearfix"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 w3l-footer">
+              <h3 class="mb-sm-3 mb-2 text-white">Quick Links</h3>
+              <div class="nav-w3-l">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="ndis.html">Ndis</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
+            <p class="copy-right-grids mt-lg-1">
+              © 2023 VHSC. All Rights Reserved | Design by
+              <a href="http://digitalvolcanoes.com/" target="_blank">Digital Volcanoes</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+   <style>
+    footer {
+        background-image: linear-gradient(180deg, #33323275 39%, #333232 100%), url('images/b_imgg2.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 50px 0; /* Add padding to the footer as needed */
+    }
+    
+    #logo{
+        background:none;
+    }
+    
+   
+</style>
+    <!-- //footer -->
+
+    <!-- Js files -->
+    <!-- JavaScript -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- Default-JavaScript-File -->
+
+    <!-- banner slider -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: true,
+          speed: 1000,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+      
+      
+      
+      
+      
+  
+    </script>
+    <!-- //banner slider -->
+
+    <!-- fixed navigation -->
+    <script src="js/fixed-nav.js"></script>
+    <!-- //fixed navigation -->
+
+    <!-- smooth scrolling -->
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- move-top -->
+    <script src="js/move-top.js"></script>
+    <!-- easing -->
+    <script src="js/easing.js"></script>
+    <!--  necessary snippets for few javascript files -->
+    <script src="js/medic.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <!-- Necessary-JavaScript-File-For-Bootstrap -->
+    
+    
+
+
+    <!-- //Js files -->
+  </body>
+</html>
